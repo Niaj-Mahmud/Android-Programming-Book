@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@color/white"
+    android:textAlignment="center"
+    tools:context=".ListActivity">
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:hint="Search here..."
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_shadow_start_color" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonAddNew"
+        android:layout_below="@+id/editTextSearch"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonAddNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Add New" />
+
+</RelativeLayout>
